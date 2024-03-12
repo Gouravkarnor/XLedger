@@ -1,0 +1,208 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  /* font-family: 'Montserrat', sans-serif; */
+  display: flex;
+  height: 100%;
+  align-items: center;
+  text-align: center;
+  background-color: #003366;
+  margin: 0;
+  overflow: hidden;
+}
+.text-heading {
+  margin-left: 30px;
+  text-align: left;
+  color: white;
+  font-family: "Playfair Display", serif;
+}
+.user {
+  margin-left: 30px;
+  text-align: left;
+  color: white;
+}
+.main-win {
+  width: 100%;
+  margin: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.navbar {
+  background-color: #003366;
+  height: 60px;
+  width: 100%;
+  margin: 0;
+  position: fixed;
+  top: 0;
+}
+.contain {
+  background-color: rgb(198, 34, 34);
+  width: 100%;
+
+  margin-top: 80px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+}
+.contain:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.left-column {
+  float: left;
+  justify-content: left;
+
+  height: 100vh;
+  width: 15%;
+  border-top-left-radius: 40px;
+}
+.right-column {
+  /* font-size: 10px; */
+  font-weight: bold;
+  float: left;
+  width: 85%;
+  height: 100vh;
+  border-top-right-radius: 40px;
+  overflow: scroll;
+  padding-bottom: 100px;
+}
+
+#username {
+  font-size: 70%;
+  font-family: "Playfair Display", serif;
+}
+#useremail {
+  font-size: 110%;
+  margin-right: 2%;
+  color: white;
+  font-family: "Playfair Display", serif;
+}
+li {
+  padding-left: 10px;
+  text-align: center;
+  align-items: center;
+  list-style: none;
+}
+ul {
+  text-align: center;
+  padding: 0;
+}
+.first-block {
+  margin-top: 10px;
+  border-top-left-radius: 5px;
+}
+#name {
+  top: 0;
+  font-size: 30px;
+}
+.sidebar ul a {
+  text-align: center;
+  text-decoration: none;
+  float: left;
+  transition: all 0.5s ease;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  line-height: 50px;
+  font-size: 20px;
+  color: #255273;
+  padding-left: 10px;
+  box-sizing: border-box;
+  /* border-top: 1px solid rgba(255,255,255,.1); */
+  border-bottom: 1px solid#255273;
+  transition: 0.4s;
+  /* margin-left: 25px; */
+}
+ul li:hover a {
+  padding-left: 30px;
+  box-shadow: 3px 3px 3px gray;
+}
+.hovering {
+  padding-left: 40px;
+  padding-right: 12px;
+  background-color: #ece9e9;
+  box-shadow: 3px 3px 3px gray;
+}
+.sidebar ul a img {
+  margin-right: 30px;
+  text-align: center;
+}
+img {
+  margin-top: 5px;
+  margin-left: 0px;
+}
+.column {
+  margin-top: 2rem;
+  margin-left: 5rem;
+  float: left;
+  border-radius: 12px;
+  border: 1px solid #003366;
+  width: 25%;
+  box-shadow: 1px 1px 4px #000000;
+
+  padding: 10px;
+  height: 270px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+.new-1 {
+  margin-top: 10%;
+}
+.new-2 {
+  color: #003366;
+}
+
+.error {
+  font-size: xx-small;
+  color: #003366;
+}
+.edit-icon {
+  padding-left: 250px;
+}
+.btn-color1:hover {
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.btn-color1 {
+  background-color: #003366;
+  color: white;
+  border: 1px solid black;
+}
+input {
+  border: 1px solid black;
+}
+.darktheme {
+  margin-right: 1%;
+  float: right;
+}
+
+.right-column-lightcolor {
+  background-color: rgb(236, 233, 233);
+}
+.right-column-darkcolor {
+  background-color: #38444d;
+}
+.left-column-light {
+  background-color: rgb(255, 255, 255);
+}
+.left-column-dark {
+  background-color: rgb(11, 9, 9);
+  color: wheat;
+}
